@@ -10,7 +10,7 @@
 
         .directive( 'gameSquare', function() {
             return {
-                templateUrl: 'tic-tac-toe/gameSquare.html',
+                templateUrl: 'gameSquare.html',
                 restrict: 'AE',
                 transclude: true,
                 replace: true,

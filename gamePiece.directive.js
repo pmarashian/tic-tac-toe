@@ -10,7 +10,7 @@
 
         .directive( 'gamePiece', function() {
             return {
-                templateUrl: 'tic-tac-toe/gamePiece.html',
+                templateUrl: 'gamePiece.html',
                 restrict: 'E',
                 transclude: true,
                 scope: {

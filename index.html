@@ -1,46 +1,37 @@
-<div class="game">
+<!DOCTYPE html>
+<html ng-app="marashian">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
 
-    <div class="board" ng-class="{
-            playing: ctrl.roomManager.room().status == 'playing',
-            yourturn : ctrl.gameManager.isYourTurn()
-            }">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
-        <game-square x="0" y="0" ></game-square>
-        <game-square x="0" y="1" ></game-square>
-        <game-square x="0" y="2" ></game-square>
+</head>
+<body>
 
-        <game-square x="1" y="0" ></game-square>
-        <game-square x="1" y="1" ></game-square>
-        <game-square x="1" y="2" ></game-square>
+<tic-tac-toe></tic-tac-toe>
 
-        <game-square x="2" y="0" ></game-square>
-        <game-square x="2" y="1" ></game-square>
-        <game-square x="2" y="2" ></game-square>
 
-    </div>
+</body>
 
-    <status-button play="ctrl.play()"></status-button>
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
 
-</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-<div>
+<script src="bower_components/underscore/underscore.js"></script>
 
-    state: {{ctrl.roomManager.state()}}<br>
-    status: {{ctrl.roomManager.room().status}}
+<script src="app.js"></script>
+<script src="ticTacToe.directive.js"></script>
+<script src="roomManager.factory.js"></script>
+<script src="gameManager.factory.js"></script>
+<script src="gamePiece.directive.js"></script>
+<script src="gameSquare.directive.js"></script>
+<script src="statusButton.directive.js"></script>
 
-</div>
-
-<p>Rooms</p>
-
-<div ng-repeat="room in ctrl.rooms">
-
-    {{room.$id}}
-
-</div>
-
-<p>Room</p>
-<p><button class="" ng-click="ctrl.leaveGame()">Leave</button></p>
-{{ctrl.roomManager.room()}}
-
-<p>Player</p>
-{{ctrl.roomManager.player().piece}}
+</html>
