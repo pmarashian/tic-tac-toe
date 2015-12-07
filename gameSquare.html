@@ -1,0 +1,8 @@
+<div
+        ng-click="ctrl.gameManager.isYourTurn() ? ctrl.gameManager.makeMove( ctrl.x, ctrl.y ) : ''"
+        ng-class="{open: !ctrl.board[ ctrl.x ][ ctrl.y ]}"
+        class="square noselect">
+
+    <game-piece x="ctrl.x" y="ctrl.y"></game-piece>
+
+</div>

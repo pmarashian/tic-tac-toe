@@ -1,0 +1,46 @@
+<div class="game">
+
+    <div class="board" ng-class="{
+            playing: ctrl.roomManager.room().status == 'playing',
+            yourturn : ctrl.gameManager.isYourTurn()
+            }">
+
+        <game-square x="0" y="0" ></game-square>
+        <game-square x="0" y="1" ></game-square>
+        <game-square x="0" y="2" ></game-square>
+
+        <game-square x="1" y="0" ></game-square>
+        <game-square x="1" y="1" ></game-square>
+        <game-square x="1" y="2" ></game-square>
+
+        <game-square x="2" y="0" ></game-square>
+        <game-square x="2" y="1" ></game-square>
+        <game-square x="2" y="2" ></game-square>
+
+    </div>
+
+    <status-button play="ctrl.play()"></status-button>
+
+</div>
+
+<div>
+
+    state: {{ctrl.roomManager.state()}}<br>
+    status: {{ctrl.roomManager.room().status}}
+
+</div>
+
+<p>Rooms</p>
+
+<div ng-repeat="room in ctrl.rooms">
+
+    {{room.$id}}
+
+</div>
+
+<p>Room</p>
+<p><button class="" ng-click="ctrl.leaveGame()">Leave</button></p>
+{{ctrl.roomManager.room()}}
+
+<p>Player</p>
+{{ctrl.roomManager.player().piece}}

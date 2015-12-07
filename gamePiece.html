@@ -1,0 +1,15 @@
+<i
+        ng-class="{
+
+        'fa-times' :
+        ( !ctrl.board[ {{ctrl.x}} ] [ {{ctrl.y}} ] && ctrl.roomManager.player().piece == 'x') ||
+        ( ctrl.board [ {{ctrl.x}} ] [ {{ctrl.y}} ] == 'x' ),
+
+        'fa-circle-o' :
+        ( !ctrl.board[ {{ctrl.x}} ] [ {{ctrl.y}} ] && ctrl.roomManager.player().piece == 'o') ||
+        ( ctrl.board [ {{ctrl.x}} ] [ {{ctrl.y}} ] == 'o' )
+        }"
+
+        class="fa">
+
+</i>

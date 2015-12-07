@@ -1,0 +1,4 @@
+<a ng-class="{waiting: ctrl.isWaiting()}" ng-show="ctrl.showButton()" class="noselect playBtn btn" ng-click="(!ctrl.roomManager.room().status || ctrl.roomManager.room().status == 'game over')? ctrl.play($event) : ''">
+    <i ng-show="ctrl.roomManager.room().status == 'waiting for opponent'" class="fa fa-spinner fa-spin"></i>
+    <span>{{ctrl.statusMessage()}}</span>
+</a>
