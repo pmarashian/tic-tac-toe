@@ -6,7 +6,10 @@ You can run with two tabs in the same browser and test it.  You do not need to r
 
 There is an issue if a player leaves and the Firebase record isn't correctly amended, the player count is wrong and the rooms need to be purged.
 
+Play a demo [here](http://pmarashian.github.io/tic-tac-toe/)
+
 ###TODO
 
 Fix the player count issue
+
 Organize the files
