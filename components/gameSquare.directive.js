@@ -8,16 +8,16 @@
 
         .module( 'marashian.ticTacToe' )
 
-        .directive( 'gamePiece', function() {
+        .directive( 'gameSquare', function() {
             return {
-                templateUrl: 'tic-tac-toe/gamePiece.html',
-                restrict: 'E',
+                templateUrl: 'components/gameSquare.html',
+                restrict: 'AE',
                 transclude: true,
-                scope: {
-                    x: '=',
-                    y: '='
-                },
                 replace: true,
+                scope: {
+                    x: '@',
+                    y: '@'
+                },
                 link: linkFunc,
                 controller: controllerFunc,
                 controllerAs: 'ctrl',

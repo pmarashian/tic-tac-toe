@@ -11,11 +11,6 @@
 
     function ticTacToe( $scope, $firebaseObject ) {
 
-
-
-
-
-
     }
 
 

@@ -1,0 +1,24 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pmarashian/tic-tac-toe",
+  "authors": [
+    "pmarashian <phillip.marashian@gmail.com>"
+  ],
+  "description": "Multiplayer Tic Tac Toe with Firebase",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "underscore": "~1.8.3",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}

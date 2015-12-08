@@ -10,7 +10,7 @@
 
         .directive( 'statusButton', function() {
             return {
-                templateUrl: 'tic-tac-toe/statusButton.html',
+                templateUrl: 'components/statusButton.html',
                 restrict: 'AE',
                 transclude: true,
                 replace: true,
