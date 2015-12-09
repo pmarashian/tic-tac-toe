@@ -10,7 +10,7 @@
 
         .directive( 'gamePiece', function() {
             return {
-                templateUrl: 'components/gamePiece.html',
+                templateUrl: 'components/gamePiece/gamePiece.html',
                 restrict: 'E',
                 transclude: true,
                 scope: {
