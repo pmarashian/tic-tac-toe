@@ -10,7 +10,7 @@
 
         .directive( 'statusButton', function() {
             return {
-                templateUrl: 'components/statusButton.html',
+                templateUrl: 'components/statusButton/statusButton.html',
                 restrict: 'AE',
                 transclude: true,
                 replace: true,
