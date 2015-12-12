@@ -10,7 +10,7 @@
 
         .directive( 'ticTacToe', function() {
             return {
-                templateUrl: 'components/ticTacToe.html',
+                templateUrl: 'components/ticTacToe/ticTacToe.html',
                 restrict: 'E',
                 transclude: true,
                 scope: {
