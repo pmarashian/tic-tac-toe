@@ -23,24 +23,30 @@
 
 </div>
 
-<div>
 
-    state: {{ctrl.roomManager.state()}}<br>
-    status: {{ctrl.roomManager.room().status}}
+<div class="debug">
+
+
+    <div>
+
+        state: {{ctrl.roomManager.state()}}<br>
+        status: {{ctrl.roomManager.room().status}}
+
+    </div>
+
+    <p>Rooms</p>
+
+    <div ng-repeat="room in ctrl.rooms">
+
+        {{room.$id}}
+
+    </div>
+
+    <p>Room</p>
+    <p><button class="" ng-click="ctrl.leaveGame()">Leave</button></p>
+    {{ctrl.roomManager.room()}}
+
+    <p>Player</p>
+    {{ctrl.roomManager.player().piece}}
 
 </div>
-
-<p>Rooms</p>
-
-<div ng-repeat="room in ctrl.rooms">
-
-    {{room.$id}}
-
-</div>
-
-<p>Room</p>
-<p><button class="" ng-click="ctrl.leaveGame()">Leave</button></p>
-{{ctrl.roomManager.room()}}
-
-<p>Player</p>
-{{ctrl.roomManager.player().piece}}

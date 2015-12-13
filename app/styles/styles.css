@@ -112,3 +112,7 @@ div.square i {
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
 }
+
+.debug {
+    border: 1px black solid;
+}
