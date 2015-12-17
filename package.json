@@ -1,0 +1,24 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "This is an experiment using Angular and Firebase.  It is a simple multiplayer Tic Tac Toe game.  It uses Firebase to keep track of the game board.",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmarashian/tic-tac-toe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmarashian/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/pmarashian/tic-tac-toe#readme"
+}
